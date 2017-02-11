@@ -1,6 +1,8 @@
 # PDF2HTMLEX-EPUB3FIXED
 A couple of bash scripts for generating a fixed-page EPUB3 from PDF2HTMLEX output
 
+https://github.com/coolwanglu/pdf2htmlEX
+
 ## Install:
 
 1. Download the two scripts for either OSX or Linux, put them in a folder in your PATH, chmod them  a+x
