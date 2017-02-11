@@ -125,7 +125,7 @@ cd ./bookroot/OEBPS/
 
 for j in *.xhtml; do
 filenumber=$(echo "$j" | sed 's/[^0-9][^0-9]*\([0-9][0-9]*\).*/\1/g')
-echo -e "   <li>\n    <a href=\"$i\">$filenumber</a>\n   </li>" >> ../../nav
+echo -e "   <li>\n    <a href=\"$j\">$filenumber</a>\n   </li>" >> ../../nav
 done
 
 echo -e "  </ol>\n </nav>\n</body>\n</html>" >> ../../nav
