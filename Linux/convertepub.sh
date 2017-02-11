@@ -63,7 +63,10 @@ mkdir ./bookroot/
 mkdir ./bookroot/META-INF/
 mkdir ./bookroot/OEBPS/
 
-mv *.css *.woff *.xhtml *.svg ./bookroot/OEBPS/
+mv *.css ./bookroot/OEBPS/
+mv *.woff ./bookroot/OEBPS/
+mv *.xhtml ./bookroot/OEBPS/
+mv *.svg ./bookroot/OEBPS/
 
 echo -n "application/epub+zip" > ./bookroot/mimetype
 
