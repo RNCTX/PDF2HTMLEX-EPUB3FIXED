@@ -45,8 +45,6 @@ sed -i '' 's/;unicode-bidi:bidi-override//g' base.min.css
 
 echo -e "\nDone generating ebook files.\nCompiling your finished book...\n"
 
-sleep 2
-
 cd ../
 
 zip -0Xq $isbn.epub mimetype && zip -Xr9Dq $isbn.epub * -x mimetype -x $isbn.epub && mv $isbn.epub ../$isbn.epub
