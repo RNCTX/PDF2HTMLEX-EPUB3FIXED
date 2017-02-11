@@ -22,7 +22,7 @@ The OSX scripts should theoretically work on any flavor of BSD Unix, they are BS
 
 If your PDF is not an actual book with a valid ISBN, that's not a big deal, just tell the ISBN scraper 'no' when it asks if it matched your book.  The 'metadata' file will be populated with default values after convertepub.sh finishes, you can edit the placeholder values before running finishepub.sh
 
-*** On Ubuntu 14.04, the included Imagemagick is too old and the version of poppler is borderline too old, if you need to update those and don't want to build them from source, run...
+*** On Ubuntu 14.04, the included Imagemagick is too old and the version of poppler is borderline too old, if you need to update those the following user repositories have the minimum versions available, to use them, run...
 
 1. sudo add-apt-repository ppa:isage-dna/imagick
 2. sudo add-apt-repository ppa:alexis-via/poppler-utils-backport
