@@ -123,8 +123,8 @@ pdfimages -f 1 -l 1 mybook.pdf ./ && convert ./-000.pbm ./cover.jpg && mv cover.
 
 cd ./bookroot/OEBPS/
 
-for i in *.xhtml; do
-filenumber=$(echo "$i" | sed 's/[^0-9][^0-9]*\([0-9][0-9]*\).*/\1/g')
+for j in *.xhtml; do
+filenumber=$(echo "$j" | sed 's/[^0-9][^0-9]*\([0-9][0-9]*\).*/\1/g')
 echo -e "   <li>\n    <a href=\"$i\">$filenumber</a>\n   </li>" >> ../../nav
 done
 
