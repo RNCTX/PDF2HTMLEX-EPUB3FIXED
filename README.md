@@ -16,7 +16,7 @@ A couple of bash scripts for generating a fixed-page EPUB3 from PDF2HTMLEX outpu
 2. Edit the chapter titles and page links in the 'nav' file for your table of contents desires
 3. Run finishepub.sh
 
-The OSX scripts should theoretically work on any flavor of BSD Unix, they are BSD sed and bash v3 friendly.  The Linux scripts were tested on Ubuntu 14.  
+The OSX scripts should theoretically work on any flavor of BSD Unix, they are BSD sed and bash v3 friendly.  The Linux scripts were tested on Ubuntu 14.04.  
 
 If your PDF is not an actual book with a valid ISBN, that's not a big deal, just tell the ISBN scraper 'no' when it asks if it matched your book.  The 'metadata' file will be populated with default values after convertepub.sh finishes, you can edit the placeholder values before running finishepub.sh
 
