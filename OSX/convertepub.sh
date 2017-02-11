@@ -51,9 +51,6 @@ done
 for h in *.svg; do
 sed -i '' 's/version="1.2"/version="1.1"/g' "$h"
 done
-
-sed -i '' '/script/d; /fancy.min.css/d; /pdf2htmlEX.min.js/d; /compatibility.min.js/d; /try/d; /pdf2htmlEX.defaultViewer/d; /catch/d; /loading-indicator/d; /pdf2htmlEX-64x64/d; s/.page/.xhtml/g' mybook.html
-
 rm -f *.outline
 rm -f pdf2htmlEX-64x64.png
 rm -f fancy.min.css
@@ -61,9 +58,9 @@ rm -f pdf2htmlEX.min.js
 rm -f compatibility.min.js
 rm -f mybook.html
 
-mkdir bookroot/
-mkdir bookroot/META-INF/
-mkdir bookroot/OEBPS/
+mkdir ./bookroot/
+mkdir ./bookroot/META-INF/
+mkdir ./bookroot/OEBPS/
 
 mv *.css *.woff *.xhtml *.svg bookroot/OEBPS/
 
