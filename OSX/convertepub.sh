@@ -9,8 +9,8 @@ echo -e "\n"
 
 cp ./*.pdf ./mybook.pdf
 pdfimages -l 2 -f 2 mybook.pdf ./
-hres=$(identify -format "%[fx:h]" -000.pbm)
-vres=$(identify -format "%[fx:w]" -000.pbm)
+hres=$(identify -format "%[fx:h]" ./-000.pbm)
+vres=$(identify -format "%[fx:w]" ./-000.pbm)
 acw=$(identify -format "%[fx:w/72]" -precision 3 mybook.pdf[2])
 ach=$(identify -format "%[fx:h/72]" -precision 3 mybook.pdf[2])
 width=$(echo "scale=2; ($acw * 100)/100" | bc)
