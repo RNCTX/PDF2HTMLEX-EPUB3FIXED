@@ -31,6 +31,5 @@ If your PDF is not an actual book with a valid ISBN, that's not a big deal, just
 5. sudo apt-get upgrade libpoppler-glib8
 6. sudo apt-get upgrade poppler-utils
 
-Those repositories have the bare minimum versions for these scripts.
 
 
