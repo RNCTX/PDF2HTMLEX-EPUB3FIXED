@@ -70,7 +70,6 @@ mv *.css *.woff *.xhtml *.svg bookroot/OEBPS/
 echo -n "application/epub+zip" > bookroot/mimetype
 
 echo -e "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<container version=\"1.0\" xmlns=\"urn:oasis:names:tc:opendocument:xmlns:container\">\n  <rootfiles>\n    <rootfile full-path=\"OEBPS/content.opf\"\n    media-type=\"application/oebps-package+xml\"/>\n  </rootfiles>\n</container>" > bookroot/META-INF/container.xml
-echo -e "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<display_options>\n  <platform name=\"*\">\n   <option name=\"fixed-layout\">true</option>\n   <option name=\"specified-fonts\">true</option>\n  </platform>\n</display_options>" > bookroot/META-INF/com.apple.ibooks.display-options.xml
 
 echo -e "\nHome stretch... Now I need input\nto generate the book metadata.\n"
 echo -e "Give me the book's title:\n"
