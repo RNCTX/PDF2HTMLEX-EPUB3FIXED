@@ -117,7 +117,7 @@ isbndbresult=$(awk '{print $1}' metadata)
    fi
   fi
 
-pdfimages -f 1 -l 1 mybook.pdf ./ && convert ./-000.pbm ./cover.jpg && mv cover.jpg ./bookroot/OEBPS && rm -f ./-000.pbm
+pdfimages -f 1 -l 1 mybook.pdf ./ && convert ./-000.ppm ./cover.jpg && mv cover.jpg ./bookroot/OEBPS && rm -f ./-000.ppm
 
 booktitle=$(sed -n 1p ./metadata)
 echo -e "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<html xmlns:epub=\"http://www.idpf.org/2007/ops\"\n   xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n <title>$booktitle</title>\n</head>\n<body>\n <nav epub:type=\"toc\" id=\"toc\">\n  <ol>\n    <li>\n     <a href=\"mybook0001.xhtml\">Chapter 1 Like This</a>\n    </li>\n    <li>\n     <a href=\"mybook0002.xhtml\">Chapter 2 Like This</a>\n    </li>\n  </ol>\n</nav>\n <nav epub:type=\"landmarks\">\n  <ol>\n   <li>\n     <a epub:type=\"cover\" href=\"mybook0001.xhtml\">Cover</a>\n   </li>\n   <li>\n    <a epub:type=\"bodymatter\" href=\"mybook0002.xhtml\">Bodymatter</a>\n   </li>\n  </ol>\n </nav>\n <nav epub:type=\"page-list\" hidden=\"\">\n  <ol>" > ./nav
