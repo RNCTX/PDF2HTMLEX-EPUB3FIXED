@@ -47,7 +47,7 @@ echo -e "\nDone generating ebook files.\nCompiling your finished book...\n"
 
 cd ../
 
-zip -0Xq $isbn.epub mimetype && zip -Xr9Dq $isbn.epub * -x mimetype -x $isbn.epub && mv $isbn.epub ../$isbn.epub
+zip -0Xq ./$isbn.epub mimetype && zip -Xr9Dq ./$isbn.epub * -x mimetype -x ./$isbn.epub && mv ./$isbn.epub ../$isbn.epub
 
 echo -e "\nDone.\n"
 
